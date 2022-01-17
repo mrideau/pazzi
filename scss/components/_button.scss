@@ -1,0 +1,21 @@
+.btn {
+    margin-top: 1rem;
+    background: $gold-crayola;
+    color: $dark;
+    border: 0;
+    padding: 5px 20px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    &.secondary {
+        background: transparent;
+        border: white solid 4px;
+        color: $baby-powder;
+    }
+    
+    a {
+        color: inherit;
+    }
+}

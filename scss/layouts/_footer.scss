@@ -1,0 +1,39 @@
+footer {
+    background-color: $morning-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 250px;
+        padding: 40px;
+    }
+
+    .link {
+        color: $dark;
+    }
+
+    .links {
+        padding: 20px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                padding: 10px 20px;
+
+                a {
+                    color: $baby-powder;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .copyrights {
+        color: $baby-powder;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,173 @@
+#landing {
+    background-image: url('../../img/restaurant.png');
+    background-size: cover;
+    height: 80vh;
+    color: $baby-powder;
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+#qui-sommes-nous {
+    background: linear-gradient(rgba($gold-crayola, 0.9)) ,url('../../img/unnamed.png');
+    background-size: cover;
+    background-position: center;
+    // padding: 5%;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    p {
+        width: 50%;
+
+        @media (max-width: 678px) {
+            width: 100%;
+        }
+    }
+}
+
+#menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $dark;
+    color: $baby-powder;
+
+    .menus-pizze {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        padding-top: 2%;
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 200px;
+                @media (max-width: 768px) {
+                    width: 300px;
+                }
+                border-radius: 100%;
+                position: relative;
+                
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+
+            h3 {
+                padding-top: 15px;
+            }
+
+            p {
+                text-align: center;
+                word-spacing: 4px;
+                text-transform: uppercase;
+                width: 100%;
+
+                &.price {
+                    letter-spacing: 3px;
+                    font-family: $secondary-font;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+#temoignages {
+    background: linear-gradient(rgba($gold-crayola, 0.9)) ,url('../../img/unnamed.png');
+    background-size: cover;
+    
+    h2 {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1 1 400px;
+
+            .star {
+                position: relative;
+
+                h2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 52%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            p {
+                text-align: center;
+                width: 90%;
+            }
+        }
+    }
+}
+
+#galerie {
+    .slideshow {
+        height: 70vh;
+    }
+}
+
+#contact {
+    background-color: $dark;
+
+    .container {
+        display: flex;
+        min-height: 600px;
+        padding: 5%;
+
+        #map {
+            width: 45%;
+        }
+
+        #details {
+            background-color: $cooper-red;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 55%;
+            padding: 2.5%;
+
+            #logo {
+                width: 50%;
+                float: right;
+            }
+
+            p {
+                line-height: 2rem;
+            }
+
+            .buttons {
+                margin-top: 40px;
+                display: flex;
+                flex-wrap: wrap;
+
+                button {
+                    margin-right: 10px;
+                    @media (max-width: 992px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

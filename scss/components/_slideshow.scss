@@ -1,0 +1,37 @@
+.slideshow {
+    position: relative;
+    background-color: $dark;
+
+    .nextslide-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: 1s;
+        
+        &.active {
+            animation: 1s fader;
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes fader {
+    from { opacity: 0.4; }
+    to { opacity: 1.0; }
+}

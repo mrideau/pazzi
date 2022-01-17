@@ -1,0 +1,8 @@
+.container {
+    padding: 2.5vw;
+    margin: 0;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+        padding: 40px;
+    }
+}
